@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!-- Name Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Story Name"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:id="@+id/storyName"
+        android:textStyle="bold"
+        android:textColor="#009688" />
+
+    <!-- Input Name -->
+    <EditText android:id="@+id/inputName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@+id/storyName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#009688" />
+
+    <!-- Price Label -->
+
+    <!-- Input Price -->
+
+    <!-- Description Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Text of Story"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:id="@+id/textOfStory"
+        android:layout_below="@+id/inputName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#009688" />
+
+    <!-- Input description -->
+    <EditText android:id="@+id/inputDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_weight="0.90"
+        android:layout_below="@+id/textOfStory"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:textColor="#009688"
+        android:layout_above="@+id/textView" />
+
+    <!-- Button Create Product -->
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Record"
+        android:id="@+id/record_story"
+        android:layout_above="@+id/btnCreateProduct"
+        android:layout_alignLeft="@+id/inputDesc"
+        android:layout_alignStart="@+id/inputDesc"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#64B5F6"
+        android:background="#EEEEEE" />
+
+    <Button android:id="@+id/btnCreateProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Story"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#4CAF50"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Categorie :"
+        android:id="@+id/textView"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/radioCategorie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="#9E9E9E" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/record_story"
+        android:id="@+id/radioCategorie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:weightSum="1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:id="@+id/radioButton"
+            android:layout_gravity="right"
+            android:layout_marginRight="117dp"
+            android:textColor="#9E9E9E"
+            android:checked="false"
+            android:layout_weight="0.79" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Story"
+            android:id="@+id/radioButton2"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toLeftOf="@+id/stop"
+            android:layout_toStartOf="@+id/stop"
+            android:checked="false"
+            android:layout_marginRight="0dp"
+            android:textSize="15dp"
+            android:textColor="#9E9E9E" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Francais"
+            android:id="@+id/radioButton3"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:layout_marginLeft="11dp"
+            android:textSize="15dp"
+            android:textColor="#9E9E9E" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:id="@+id/microRecord"
+        android:background="@drawable/newfile1"
+        android:layout_above="@+id/btnCreateProduct"
+        android:layout_toRightOf="@+id/record_story"
+        android:layout_toEndOf="@+id/record_story"
+        android:layout_marginLeft="80dp" />
+
+    <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/fileDescription"
+        android:background="@drawable/newfile"
+        android:layout_alignBottom="@+id/textOfStory"
+        android:layout_toRightOf="@+id/record_story"
+        android:layout_toEndOf="@+id/record_story"
+        android:layout_marginLeft="120dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Or"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/radioCategorie"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp" />
+
+</RelativeLayout>

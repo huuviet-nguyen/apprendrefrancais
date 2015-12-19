@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ApprendreFrancais</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_all_stories">AllStoriesActivity</string>
+    <string name="title_activity_new_story">NewStoryActivity</string>
+    <string name="title_activity_read_story">ReadStoryActivity</string>
+    <string name="title_activity_categorie">CategorieActivity</string>
+    <string name="title_activity_theme">ThemeActivity</string>
+    <string name="title_activity_file_path">FilePathActivity</string>
+</resources>
